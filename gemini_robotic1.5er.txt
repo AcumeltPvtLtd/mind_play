@@ -1,0 +1,155 @@
+----------------------------------------------------------------------
+CAST IRON MICROSTRUCTURE REPORT REFERENCE GUIDE (ASCII EDITION)
+Based on EN ISO 945-1:2018 Standards and Machine Report Data
+----------------------------------------------------------------------
+
+**INTRODUCTION: THE PURPOSE OF THE ANALYSIS**
+
+A microstructure report analyzes the internal structure of cast iron. The mechanical properties (strength, hardness, ductility) of cast iron are determined not only by its chemical composition but also by the shape (form), size, and distribution of the carbon (graphite) and the surrounding metal matrix. This report specifically evaluates **Ductile Iron**, where carbon is ideally present as spherical nodules.
+
+**PART 1: SAMPLE PREPARATION AND IMAGING**
+
+The report requires two types of sample preparation to reveal different aspects of the microstructure:
+
+**1. Unetched Sample Analysis (Graphite Analysis)**
+   *   **Definition:** The sample surface is highly polished but not chemically treated.
+   *   **Purpose:** To make the **graphite particles** clearly visible against the reflective metal background. This allows for accurate measurement of graphite form, size, distribution, and particle count.
+   *   **Report Data Example:** The sample report's `Unetched` section contains all graphite-specific data (e.g., Graphite Form, Nodular Particles per mm²).
+
+**2. Etched Sample Analysis (Matrix Analysis)**
+   *   **Definition:** The sample surface is chemically treated after polishing (e.g., with Nital or Picral solutions).
+   *   **Purpose:** To reveal the **matrix structure** (the metal surrounding the graphite). The etchant attacks different phases at varying rates, making phases like Ferrite and Pearlite distinguishable under a microscope.
+   *   **Report Data Example:** The sample report's `Etched` section contains the `Ferrite / Pearlite Ratio`.
+
+**PART 2: TERMINOLOGY DEFINITION (GRAPHITE ANALYSIS)**
+
+This section defines the terms found in the `Unetched Sample` analysis.
+
+**Standard: EN ISO 945-1:2018**
+*   **Definition:** International standard specifying the classification system for graphite microstructure in cast iron, based on form, size, and distribution.
+
+**Graphite Form (Forms I to VI)**
+*   **Definition:** The shape of the graphite particles, classified according to the EN ISO 945-1 standard.
+*   **Form VI (Nodular/Spheroidal):** The ideal, spherical shape required for ductile iron. High concentration of Form VI leads to excellent strength and ductility.
+*   **Form V (Irregular/Cluster):** Near-spherical shapes, often referred to as "spheroids." High quality, but less ideal than Form VI.
+*   **Form IV (Vermicular/Compacted):** Short, thick, rounded flakes or coral-like shapes. Leads to **Compacted Graphite Iron (CGI)**, which has properties between gray iron and ductile iron.
+*   **Form III (Flake/Interdendritic):** Flake-like shapes, typical of **Gray Cast Iron**. Flakes act as stress concentrators, reducing strength and ductility significantly.
+*   **Report Data Example:** `Graphite Form: VI(59%) V(39%) IV(1%) III(1%)` means 59% of the graphite is Form VI, 39% is Form V, etc.
+
+**Graphite Size**
+*   **Definition:** A scale from 1 (coarsest/largest) to 8 (finest/smallest) to describe the size of the graphite particles.
+*   **Significance:** Finer graphite particles (higher size number, like 7 or 8) lead to a higher quantity of particles per area and generally result in better mechanical properties for a given graphite form.
+*   **Report Data Example:** `Graphite Size: 7` indicates a relatively fine graphite size.
+
+**Particles per mm²**
+*   **Definition:** The total number of graphite particles of all forms counted in a reference area of one square millimeter (mm²).
+*   **Significance:** Measures the overall quantity of particles. A higher count generally corresponds to better mechanical properties (e.g., higher strength and ductility) for a specific graphite form.
+
+**Nodular Particles per mm²**
+*   **Definition:** The specific count of only those particles that meet the criteria for "nodular" (typically Forms VI and V, depending on the standard's specific criteria) within a 1 mm² area.
+
+**Graphite Fraction (%)**
+*   **Definition:** The percentage of the total area of the sample that is occupied by graphite.
+*   **Significance:** Correlates directly to the carbon content of the cast iron.
+
+**Graphite Nodularity (%)**
+*   **Definition:** The most important quality metric for ductile iron. It measures the percentage of graphite particles that have a true spherical shape (nodule) relative to all graphite particles.
+*   **Formula:** `Nodularity (%) = (Nodular Particles per mm² / Total Particles per mm²) * 100`
+
+**PART 3: TERMINOLOGY DEFINITION (MATRIX ANALYSIS)**
+
+This section defines the terms found in the `Etched Sample` analysis.
+
+**Ferrite**
+*   **Definition:** A relatively soft, ductile, pure iron phase in the matrix.
+*   **Significance:** Provides ductility (ability to deform without breaking) and good machinability. High ferrite percentage leads to lower strength.
+
+**Pearlite**
+*   **Definition:** A harder and stronger phase in the matrix, consisting of fine, alternating layers of ferrite and cementite (iron carbide).
+*   **Significance:** Increases tensile strength and hardness. High pearlite percentage decreases ductility and machinability.
+
+**Ferrite / Pearlite Ratio**
+*   **Definition:** The percentage breakdown of the matrix area into ferrite and pearlite phases.
+*   **Report Data Example:** `Ferrite / Pearlite Ratio: 55.5% / 44.5%` means 55.5% of the matrix area is ferrite and 44.5% is pearlite.
+
+**PART 4: CALCULATION EXAMPLES (WITH MENTAL MATH EXAMPLES)**
+
+Here are practical examples demonstrating how the values in the report are calculated, using simple numbers for mental math.
+
+**Example 1: Graphite Nodularity Calculation**
+
+This calculation determines the quality of the ductile iron by comparing the quantity of good nodules to the total quantity of graphite particles.
+
+*   **Report Data:**
+    *   `Particles per mm² (Total): 418.17`
+    *   `Nodular Particles per mm²: 393.81`
+    *   `Graphite Nodularity: 94.0 % by count`
+
+*   **Calculation:**
+    *   Formula: `(Nodular Particles / Total Particles) * 100`
+    *   Calculation: `(393.81 / 418.17) * 100 = 94.17%`
+    *   **Result:** The report rounds this to 94.0%.
+
+*   **Mental Math Example (using numbers 20-35):**
+    *   Imagine a small field of view.
+    *   Let `Total Particles per mm² = 30`.
+    *   Let `Nodular Particles per mm² = 27`.
+    *   `Nodularity = (27 / 30) * 100`
+    *   `Nodularity = 0.9 * 100 = 90%`
+
+**Example 2: Interpreting Graphite Form Breakdown and Nodularity**
+
+The breakdown `VI(59%) V(39%) IV(1%) III(1%)` shows the relative proportion of each graphite form. The nodularity calculation often considers forms V and VI together.
+
+*   **Input Data:**
+    *   `Graphite Form: VI(59%) V(39%) IV(1%) III(1%)`
+    *   Total % of non-nodular forms (IV + III) = 1% + 1% = 2%
+    *   Total % of nodular/near-nodular forms (VI + V) = 59% + 39% = 98%
+
+*   **Relationship to Nodularity:** The high nodularity value of 94.0% in the report strongly suggests that both Form VI (59%) and a large portion of Form V (39%) particles were counted as "Nodular Particles" in the calculation. If only Form VI were counted, the nodularity value would be much lower (closer to 59%).
+
+**Example 3: Interpreting Matrix Ratio**
+
+The matrix ratio dictates the final properties of the casting.
+
+*   **Report Data:** `Ferrite / Pearlite Ratio: 55.5% / 44.5%`
+
+*   **Interpretation:** This material has a significant amount of both phases.
+    *   **Ferrite (55.5%):** Contributes to high ductility and good toughness.
+    *   **Pearlite (44.5%):** Contributes to high strength and hardness.
+    *   **Conclusion:** This composition indicates a good balance between strength and ductility for general engineering applications, often referred to as ferritic-pearlitic ductile iron.
+
+**PART 5: ASCII CHEATSHEET FOR QUICK REFERENCE**
+
+```asciidoc
+----------------------------------------------------------------------
+MICROSTRUCTURE ANALYSIS CHEATSHEET (EN ISO 945-1)
+----------------------------------------------------------------------
+**SAMPLE PREPARATION**
+| Type | Purpose | Key Data Found Here |
+| :--- | :--- | :--- |
+| **Unetched** | Analyze Graphite Form/Size | Particles per mm², Nodularity, Graphite Form Breakdown |
+| **Etched** | Analyze Matrix Phases | Ferrite / Pearlite Ratio |
+
+**GRAPHITE CLASSIFICATION (FORMS)**
+| Form | Name | Visual Appearance | Properties Impact |
+| :--- | :--- | :--- | :--- |
+| **VI** | Nodular (Ductile) | Perfect Spheres | High Ductility, High Strength |
+| **V** | Irregular Nodular | Slightly Irregular Spheres | Good Ductility, Good Strength |
+| **IV** | Vermicular | Worm-like Flakes | Moderate Ductility/Strength |
+| **III** | Flake (Gray Iron) | Sharp, Thin Flakes | Brittle, Low Strength |
+
+**KEY CALCULATIONS**
+**Graphite Nodularity (%) = (Nodular Particles per mm² / Total Particles per mm²) * 100**
+*   *Interpretation:* The quality score for ductile iron; higher percentage is better.
+*   *Example:* (27 Nodular / 30 Total) * 100 = 90%
+
+**Ferrite / Pearlite Ratio**
+*   *Calculation:* % Ferrite Area / % Pearlite Area (from etched image analysis)
+*   *Interpretation:* Determines hardness vs. ductility trade-off. High Ferrite = soft/ductile. High Pearlite = hard/strong.
+
+**GRAPHITE SIZE (Scale 1-8)**
+*   *1-2:* Very Coarse | *3-5:* Medium Coarse | *6-8:* Fine
+*   *Rule of Thumb:* Higher size number (finer graphite) = better properties generally.
+
+----------------------------------------------------------------------
