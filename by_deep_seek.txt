@@ -1,0 +1,176 @@
+=============================================================================
+          CAST IRON MICROSTRUCTURE REPORT - TERMS & DEFINITIONS
+=============================================================================
+
+I.  SAMPLE INFORMATION
+-----------------------------------------------------------------------------
+1.  Reference
+    Definition: Unique identifier for the sample, often linking to a
+                production batch, heat number, or purchase order.
+    Example: F333-099(BE855)-14
+
+2.  Group
+    Definition: Classification of the sample within a set (e.g., A, B, C or
+                treatment group). Often left blank for single samples.
+
+3.  Sample Comment
+    Definition: General notes about the physical sample (e.g., "as-cast",
+                "broken lug", "from riser").
+
+4.  Image Comment
+    Definition: Notes specific to the field of view analyzed (e.g., "HUB 821111",
+                "center of section", "near defect").
+    Example: HUB 821111
+
+5.  Sample Type
+    Definition: Indicates the surface preparation of the sample for analysis.
+    - Etched: Sample treated with a chemical (e.g., Nital) to reveal the
+              metallic matrix (ferrite, pearlite). Used for matrix analysis.
+    - Unetched: Sample polished but not etched. Used for graphite analysis.
+    Example: 'Etched' for Ferrite/Pearlite analysis; 'Unetched' for Graphite analysis.
+
+6.  Standard
+    Definition: The primary international standard used for classification
+                and measurement (e.g., ISO, ASTM).
+    Example: EN ISO 945-1:2018 (Standard for graphite classification in cast irons).
+
+7.  Standard 2
+    Definition: A secondary standard used, often for a specific property like
+                nodularity assessment.
+    Example: EN ISO 945-1:2018 (again, or could be ASTM A247).
+
+II.  QUANTITATIVE IMAGE ANALYSIS RESULTS
+-----------------------------------------------------------------------------
+8.  Particles per mm² (Graphite Particle Count Density)
+    Definition: Total number of graphite particles counted per square millimeter
+                of the examined area.
+    Formula: P_total = (Total Count of Graphite Particles) / (Area of Field in mm²)
+    Manual Example: If you count 2500 particles in a field of view that is
+                    0.25 mm x 0.25 mm = 0.0625 mm², then:
+                    P_total = 2500 / 0.0625 = 40,000 particles/mm².
+    Report Example: 418.17 particles/mm².
+
+9.  Graphite Form (Type/Shape)
+    Definition: Classification of graphite particles by shape according to
+                standards like ISO 945-1. Reported as % distribution of forms.
+    Common Forms:
+        I    Lamellar (Flake)
+        II   ? (Rarely used in common reports)
+        III  Compacted/Vermicular
+        IV   Nodular (Spheroidal, but imperfect)
+        V    Irregular
+        VI   Perfect Nodular (Spheroidal)
+    How it's done: An operator or software classifies each particle by comparing
+                   its shape to standard charts. Results are tallied into percentages.
+    Manual Example: You classify 100 particles: 60 as Form VI, 35 as Form V,
+                    4 as Form IV, 1 as Form III.
+                    Calculation:
+                    Form VI% = (60/100)*100 = 60%
+                    Form V%  = (35/100)*100 = 35%
+                    Form IV% = (4/100)*100  = 4%
+                    Form III%= (1/100)*100  = 1%
+    Report Example: VI(59%) V(39%) IV(1%) III(1%)
+
+10. Graphite Size
+    Definition: A number representing the average size of the graphite particles,
+                often corresponding to a chart in the standard (e.g., ISO 945-1).
+                A lower number means finer graphite.
+    Common Scale: Typically 1 (very coarse) to 8 (very fine).
+    How it's done: The area of each particle is measured, converted to an
+                   equivalent circle diameter. The mean or median of these
+                   diameters is then matched to the standard chart number.
+    Report Example: 7 (indicating fine graphite).
+
+11. Graphite Distribution
+    Definition: Describes the spatial uniformity of graphite particles
+                (e.g., "Uniform", "Random", "Segregated", "Eutectic Cell").
+    Note: Often left blank or implied in automated reports.
+
+12. Ferrite / Pearlite Ratio
+    Definition: The area percentage of the metallic matrix (iron) comprised of
+                ferrite (soft, light etching phase) and pearlite (harder,
+                lamellar phase of ferrite + cementite). Does NOT include graphite.
+    Key Point: Ratio is of the MATRIX ONLY. Graphite is separate.
+    Formula: %Ferrite + %Pearlite = 100% of the matrix area.
+    How it's done: On an ETCHED sample, image analysis software or point counting
+                   determines the area fraction of each phase in the matrix.
+    Manual Example (Point Counting): On a 100-point grid over the matrix (avoiding
+                   graphite), 60 points land on ferrite, 40 on pearlite.
+                   %Ferrite = (60/100)*100 = 60%
+                   %Pearlite = (40/100)*100 = 40%
+    Report Example: 55.5% / 44.5%
+
+13. Graphite Fraction (aka Graphite Area Fraction, %Graphite)
+    Definition: The total area percentage of the ENTIRE microstructure (matrix +
+                graphite) occupied by graphite particles.
+    Formula: %G = (Total Graphite Area / Total Image Area) * 100
+    Manual Example: In a 1000x1000 pixel image, if thresholding shows 103,000
+                    pixels are graphite, then:
+                    %G = (103,000 / 1,000,000) * 100 = 10.3%
+    Report Example: 10.3 % (This value is typically from the unetched analysis).
+
+14. Nodular Particles per mm²
+    Definition: The number of graphite particles classified as "nodular"
+                (typically Forms IV and VI) per square millimeter.
+    Formula: P_nodular = (Count of Nodular Particles) / (Area of Field in mm²)
+    Relationship: P_nodular <= Particles per mm².
+    Manual Example: From the 2500 particles counted earlier, suppose 2350 were
+                    Forms IV & VI. Area was 0.0625 mm².
+                    P_nodular = 2350 / 0.0625 = 37,600 particles/mm².
+    Report Example: 393.81 nodular particles/mm².
+
+15. Graphite Nodularity
+    Definition: The percentage, by particle COUNT, of graphite particles that
+                are nodular (Forms IV & VI) relative to the total number of
+                graphite particles.
+    Formula: %Nod = [ (Count of Form IV + Count of Form VI) / (Total Graphite Count) ] * 100
+    Key Point: It is a COUNT-based percentage, NOT an area-based percentage.
+    Manual Example: Total particles = 100. Form VI = 59, Form IV = 1.
+                    Nodular Particles = 59 + 1 = 60.
+                    %Nod = (60 / 100) * 100 = 60%
+    Report Example: 94.0 % by count.
+    Calculation from Report Data (Cross-Check):
+        Total Particles/mm² = 418.17
+        Nodular Particles/mm² = 393.81
+        Implied Nodularity = (393.81 / 418.17) * 100 ≈ 94.2% (Matches 94.0% with rounding).
+
+-----------------------------------------------------------------------------
+PRACTICAL WALKTHROUGH: DECODING THE EXAMPLE REPORT
+-----------------------------------------------------------------------------
+The report shows TWO analyses on the SAME sample (F333-099(BE855)-14):
+**Part 1 (Etched Sample):**
+    Purpose: Analyze the metallic matrix.
+    Results: Ferrite/Pearlite Ratio = 55.5%/44.5%, Graphite Fraction = 10.3%.
+    Note: Graphite data here may be a carry-over or from a linked dataset.
+
+**Part 2 (Unetched Sample):**
+    Purpose: Analyze the graphite particles.
+    Results:
+    - Standard used: EN ISO 945-1:2018.
+    - Particle Density: 418.17 part./mm².
+    - Graphite Form: Mostly Forms VI & V (59% + 39% = 98%).
+    - Graphite Size: 7 (Fine).
+    - Graphite Fraction: 10.3% (Links result from Part 1).
+    - Nodular Particle Density: 393.81 part./mm².
+    - Nodularity: 94.0% (Calculated as 393.81 / 418.17).
+
+Interpretation: This is a high-quality ductile iron (nodular graphite iron).
+- High nodularity (94%) indicates excellent spheroidization treatment.
+- Fine graphite size (7) is typical for well-inoculated castings.
+- The matrix is slightly ferrite-rich (55.5%), which provides good ductility.
+- Graphite fraction of 10.3% is within typical range for ductile iron.
+
+-----------------------------------------------------------------------------
+ASCII CHEAT SHEET - KEY FORMULAS & RELATIONSHIPS
+-----------------------------------------------------------------------------
+1.  %Ferrite + %Pearlite = 100% (of the matrix area)
+2.  %Graphite + %Matrix = 100% (of the total microstructure area)
+3.  Nodularity (% by count) = (Nodular Particles / Total Particles) * 100
+4.  Any "per mm²" value = (Count) / (Microscope Field Area in mm²)
+5.  Graphite Form % for a type = (Count of that Form / Total Particles) * 100
+
+REMEMBER:
+- "Etched" -> Look at FERRITE/PEARLITE.
+- "Unetched" -> Look at GRAPHITE shape, size, nodularity.
+- Nodularity is a COUNT ratio. Graphite Fraction is an AREA ratio.
+=============================================================================
