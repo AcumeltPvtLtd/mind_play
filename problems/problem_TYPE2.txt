@@ -1,0 +1,297 @@
+SECTION 1: TERM DEFINITIONS
+
+Graphite Form (VI, V, IV, III)
+A classification code describing the shape of the graphite particles, ranging from perfect spheres (VI) to irregular vermicular or flake shapes (III).
+
+Graphite Size (Code 7)
+A code representing the average size range of the graphite particles, used to quickly identify if particles are too large or too small.
+
+Graphite Distribution
+Describes how evenly the graphite particles are spread throughout the metal's structure, ideally uniform and non-clustered.
+
+Ferrite / Pearlite Ratio
+The percentage breakdown of soft ferrite and hard pearlite phases in the metal matrix, which dictates the material's strength and ductility.
+
+Graphite Fraction (Area %)
+The total percentage of the microstructure's surface area that consists of graphite particles.
+
+Particles per mm²
+The total count of all graphite particles observed within one square millimeter of surface area.
+
+Nodular Particles per mm²
+The count specifically of desirable, perfectly spherical (nodular, Forms VI and V) graphite particles within one square millimeter.
+
+Graphite Nodularity (% by count)
+The percentage of all graphite particles that have the desirable spherical shape (Forms VI and V).
+
+SECTION 2: CALCULATION METHODS & SHORTCUTS
+
+Verify the Ferrite/Pearlite ratio sums to 100% of the matrix. Show the one-step mental check.
+Example: Ferrite (55.5%) + Pearlite (44.5%) = 100%
+Mental Check: 55.5 + 44.5 = 100
+
+Calculate the actual microstructure percentages of Ferrite and Pearlite given the Ferrite/Pearlite ratio (55.5%/44.5%) and Graphite Fraction (10.3%). Show the two-step calculation and a rounding shortcut.
+Calculation:
+Step 1: Calculate matrix percentage: 100% - Graphite Fraction (10.3%) = 89.7% matrix.
+Step 2: Calculate actual Ferrite: 89.7% * (55.5% / 100) = 49.79% actual Ferrite.
+Step 3: Calculate actual Pearlite: 89.7% * (44.5% / 100) = 39.91% actual Pearlite.
+Rounding Shortcut: Round matrix to 90%. Round ratio to 56%/44%. Pearlite = 90 * 0.44 = 39.6%.
+
+Calculate Nodularity (% by count) from "Nodular Particles per mm²" and "Particles per mm²". Show the exact calculation from the report (393.81 and 418.17) and a shortcut for estimating without a calculator.
+Exact Calculation:
+393.81 / 418.17 * 100 = 94.17%
+Shortcut Calculation (Estimation):
+Rounding: 394 / 418. Subtract non-nodular count: 418 - 394 = 24. Estimate: 24 / 418 is roughly 24 / 400 = 6%. Nodularity = 100% - 6% = 94%.
+
+Calculate the percentage of non-nodular (non-V/VI) graphite forms from the given Graphite Form distribution (VI 59%, V 39%, IV 1%, III 1%). Show the fastest method.
+Calculation: Add the non-nodular forms (IV + III) directly.
+1% (Form IV) + 1% (Form III) = 2%
+
+Demonstrate how to find the two unknown phase percentages if only one is known (e.g., given Pearlite% of the entire microstructure is 40%, and Graphite Fraction is 10.3%, find Ferrite%). Show the formula and a quick mental subtraction method.
+Calculation:
+Formula: Ferrite% = 100% - Pearlite% - Graphite Fraction%
+Step 1: Calculate Ferrite percentage: 100% - 40% (Pearlite) - 10.3% (Graphite) = 49.7% Ferrite.
+Quick Mental Method: Total (100%) - Pearlite (40%) = 60%. Subtract Graphite (10.3%): 60 - 10.3 = 49.7%.
+
+SECTION 3: GENERATED PRACTICE PROBLEMS
+
+Given a Graphite Fraction of 12% and a Ferrite/Pearlite ratio of 60%/40% in the matrix, calculate the actual Pearlite percentage in the entire microstructure.
+[Step 1: Calculate matrix percentage: 100 - 12 = 88%]
+[Step 2: Calculate Pearlite percentage: 88 * 0.40 = 35.2%]
+[Answer: 35.2%]
+
+Calculate Graphite Nodularity if Nodular Particles per mm² = 350 and Total Particles per mm² = 400.
+[Step 1: 350 / 400 = 0.875]
+[Step 2: 0.875 * 100 = 87.5]
+[Answer: 87.5%]
+
+A technician observes 450 total particles per mm² and 420 nodular particles per mm². Calculate the Nodularity (% by count).
+[Step 1: 420 / 450 = 0.9333]
+[Step 2: 0.9333 * 100 = 93.33]
+[Answer: 93.33%]
+
+Calculate the percentage of non-nodular graphite if Graphite Form distribution is VI 70%, V 20%, IV 5%, III 5%.
+[Step 1: Add non-nodular forms (IV + III): 5 + 5 = 10]
+[Answer: 10%]
+
+Find the actual microstructure percentage of Ferrite if Graphite Fraction = 8%, and the Ferrite/Pearlite ratio in the matrix is 70%/30%.
+[Step 1: Calculate matrix percentage: 100 - 8 = 92%]
+[Step 2: Calculate Ferrite percentage: 92 * 0.70 = 64.4%]
+[Answer: 64.4%]
+
+If the Pearlite percentage in the entire microstructure is 35% and Graphite Fraction is 11%, calculate the Ferrite percentage.
+[Step 1: 100 - 35 = 65]
+[Step 2: 65 - 11 = 54]
+[Answer: 54%]
+
+Verify the Ferrite/Pearlite ratio sum if Ferrite = 92% and Pearlite = 8% of the matrix.
+[Step 1: 92 + 8 = 100]
+[Answer: Sum verified (100%)]
+
+Calculate Graphite Nodularity if Nodular Particles per mm² = 380 and Total Particles per mm² = 420.
+[Step 1: 380 / 420 = 0.9048]
+[Step 2: 0.9048 * 100 = 90.48]
+[Answer: 90.48%]
+
+Calculate the total non-nodular particles if total particles = 500 and nodularity = 90%.
+[Step 1: Calculate nodular particles: 500 * 0.90 = 450]
+[Step 2: Calculate non-nodular particles: 500 - 450 = 50]
+[Answer: 50 particles]
+
+If a microstructure has 12% Graphite Fraction (Area %) in a 10 mm² field, calculate the total area covered by graphite.
+[Step 1: 10 * 0.12 = 1.2]
+[Answer: 1.2 mm²]
+
+What percentage of the microstructure is nodular graphite if VI = 80%, V = 15%, IV = 3%, III = 2%?
+[Step 1: Add nodular forms (VI + V): 80 + 15 = 95]
+[Answer: 95%]
+
+Given a Graphite Fraction of 9% and a Ferrite/Pearlite ratio of 80%/20% in the matrix, calculate the actual Ferrite percentage in the entire microstructure.
+[Step 1: Calculate matrix percentage: 100 - 9 = 91%]
+[Step 2: Calculate Ferrite percentage: 91 * 0.80 = 72.8%]
+[Answer: 72.8%]
+
+Find the missing percentage of Pearlite if the Ferrite / Pearlite Ratio in the matrix is 75% Ferrite.
+[Step 1: 100 - 75 = 25]
+[Answer: 25% Pearlite]
+
+A report shows 400 total particles per mm² and 30 non-nodular particles per mm². Calculate Nodularity (% by count).
+[Step 1: Calculate nodular particles: 400 - 30 = 370]
+[Step 2: Calculate nodularity percentage: (370 / 400) * 100 = 92.5]
+[Answer: 92.5%]
+
+Calculate Graphite Nodularity if Nodular Particles per mm² = 410 and Total Particles per mm² = 450.
+[Step 1: 410 / 450 = 0.9111]
+[Step 2: 0.9111 * 100 = 91.11]
+[Answer: 91.11%]
+
+If Graphite Form VI = 50% and Form V = 40%, calculate the percentage of non-nodular graphite (IV + III forms) assuming a 100% total.
+[Step 1: Add nodular forms (VI + V): 50 + 40 = 90]
+[Step 2: Subtract from total: 100 - 90 = 10]
+[Answer: 10%]
+
+Given a Graphite Fraction of 10% and a Ferrite/Pearlite ratio of 70%/30% in the matrix, calculate the actual Pearlite percentage in the entire microstructure.
+[Step 1: Calculate matrix percentage: 100 - 10 = 90%]
+[Step 2: Calculate Pearlite percentage: 90 * 0.30 = 27%]
+[Answer: 27%]
+
+Find the Pearlite percentage in the entire microstructure if Ferrite = 60% and Graphite Fraction = 10%.
+[Step 1: 100 - 60 = 40]
+[Step 2: 40 - 10 = 30]
+[Answer: 30%]
+
+A report shows 300 total particles per mm² and 27 non-nodular particles per mm². Calculate Nodularity (% by count).
+[Step 1: Calculate nodular particles: 300 - 27 = 273]
+[Step 2: Calculate nodularity percentage: (273 / 300) * 100 = 91]
+[Answer: 91%]
+
+Calculate Graphite Nodularity if Nodular Particles per mm² = 405 and Total Particles per mm² = 450.
+[Step 1: 405 / 450 = 0.90]
+[Step 2: 0.90 * 100 = 90]
+[Answer: 90%]
+
+If Graphite Form distribution is VI 55%, V 40%, IV 3%, III 2%, calculate the percentage of non-nodular graphite.
+[Step 1: Add non-nodular forms (IV + III): 3 + 2 = 5]
+[Answer: 5%]
+
+A technician observes 350 particles in a 0.7 mm² field. Calculate the Particles per mm².
+[Step 1: 350 / 0.7 = 500]
+[Answer: 500 particles per mm²]
+
+Given a Graphite Fraction of 11% and a Ferrite/Pearlite ratio of 65%/35% in the matrix, calculate the actual Ferrite percentage in the entire microstructure.
+[Step 1: Calculate matrix percentage: 100 - 11 = 89%]
+[Step 2: Calculate Ferrite percentage: 89 * 0.65 = 57.85%]
+[Answer: 57.85%]
+
+Calculate the percentage of non-nodular graphite if nodularity is 92%.
+[Step 1: 100 - 92 = 8]
+[Answer: 8%]
+
+Calculate Graphite Nodularity if Nodular Particles per mm² = 398 and Total Particles per mm² = 430.
+[Step 1: 398 / 430 = 0.9256]
+[Step 2: 0.9256 * 100 = 92.56]
+[Answer: 92.56%]
+
+If Graphite Form VI = 60%, Form V = 35%, and Form IV = 3%, calculate Form III percentage.
+[Step 1: Add known forms: 60 + 35 + 3 = 98]
+[Step 2: Subtract from total: 100 - 98 = 2]
+[Answer: 2%]
+
+Calculate the Nodular Particles per mm² if Total Particles per mm² = 420 and Nodularity = 90%.
+[Step 1: 420 * 0.90 = 378]
+[Answer: 378 particles]
+
+Given a Graphite Fraction of 10.3%, and an actual Ferrite percentage of 50.3% in the entire microstructure, calculate the actual Pearlite percentage.
+[Step 1: 100 - 10.3 = 89.7]
+[Step 2: 89.7 - 50.3 = 39.4]
+[Answer: 39.4%]
+
+Calculate Graphite Nodularity if Nodular Particles per mm² = 370 and Total Particles per mm² = 400.
+[Step 1: 370 / 400 = 0.925]
+[Step 2: 0.925 * 100 = 92.5]
+[Answer: 92.5%]
+
+If Graphite Form distribution is VI 72%, V 22%, IV 4%, III 2%, calculate the percentage of nodular graphite.
+[Step 1: Add nodular forms (VI + V): 72 + 22 = 94]
+[Answer: 94%]
+
+Given a Graphite Fraction of 13% and a Ferrite/Pearlite ratio of 50%/50% in the matrix, calculate the actual Ferrite percentage in the entire microstructure.
+[Step 1: Calculate matrix percentage: 100 - 13 = 87%]
+[Step 2: Calculate Ferrite percentage: 87 * 0.50 = 43.5%]
+[Answer: 43.5%]
+
+If Graphite Form VI = 60%, Form V = 30%, and Form III = 5%, calculate Form IV percentage.
+[Step 1: Add known forms: 60 + 30 + 5 = 95]
+[Step 2: Subtract from total: 100 - 95 = 5]
+[Answer: 5%]
+
+Calculate the Nodular Particles per mm² if Total Particles per mm² = 350 and Nodularity = 92%.
+[Step 1: 350 * 0.92 = 322]
+[Answer: 322 particles]
+
+Find the missing percentage of Pearlite if Ferrite = 88% of the matrix and the total is 100%.
+[Step 1: 100 - 88 = 12]
+[Answer: 12% Pearlite]
+
+A report shows 420 total particles per mm² and 30 non-nodular particles per mm². Calculate Nodularity (% by count).
+[Step 1: Calculate nodular particles: 420 - 30 = 390]
+[Step 2: Calculate nodularity percentage: (390 / 420) * 100 = 92.86]
+[Answer: 92.86%]
+
+Given a Graphite Fraction of 12%, and an actual Pearlite percentage of 30% in the entire microstructure, calculate the actual Ferrite percentage.
+[Step 1: 100 - 12 = 88]
+[Step 2: 88 - 30 = 58]
+[Answer: 58%]
+
+What percentage of the microstructure is non-nodular if VI = 70%, V = 25%, IV = 3%, III = 2%?
+[Step 1: Add non-nodular forms (IV + III): 3 + 2 = 5]
+[Answer: 5%]
+
+A technician observes 480 particles in a 1.2 mm² field. Calculate the Particles per mm².
+[Step 1: 480 / 1.2 = 400]
+[Answer: 400 particles per mm²]
+
+If nodularity is 89%, calculate the percentage of non-nodular graphite.
+[Step 1: 100 - 89 = 11]
+[Answer: 11%]
+
+Given a Graphite Fraction of 9.5% and a Ferrite/Pearlite ratio of 75%/25% in the matrix, calculate the actual Pearlite percentage in the entire microstructure.
+[Step 1: Calculate matrix percentage: 100 - 9.5 = 90.5%]
+[Step 2: Calculate Pearlite percentage: 90.5 * 0.25 = 22.625%]
+[Answer: 22.625%]
+
+If Graphite Form distribution is VI 58%, V 37%, IV 3%, III 2%, calculate the percentage of nodular graphite.
+[Step 1: Add nodular forms (VI + V): 58 + 37 = 95]
+[Answer: 95%]
+
+Calculate the total non-nodular particles if total particles = 460 and nodularity = 93%.
+[Step 1: Calculate nodular particles: 460 * 0.93 = 427.8]
+[Step 2: Calculate non-nodular particles: 460 - 427.8 = 32.2]
+[Answer: 32.2 particles]
+
+Given a Graphite Fraction of 10%, and an actual Ferrite percentage of 65% in the entire microstructure, calculate the actual Pearlite percentage.
+[Step 1: 100 - 10 = 90]
+[Step 2: 90 - 65 = 25]
+[Answer: 25%]
+
+Calculate Graphite Nodularity if Nodular Particles per mm² = 395 and Total Particles per mm² = 435.
+[Step 1: 395 / 435 = 0.9080]
+[Step 2: 0.9080 * 100 = 90.80]
+[Answer: 90.80%]
+
+If Graphite Form VI = 62%, Form V = 33%, and Form III = 2%, calculate Form IV percentage.
+[Step 1: Add known forms: 62 + 33 + 2 = 97]
+[Step 2: Subtract from total: 100 - 97 = 3]
+[Answer: 3%]
+
+Calculate the Nodular Particles per mm² if Total Particles per mm² = 480 and Nodularity = 94%.
+[Step 1: 480 * 0.94 = 451.2]
+[Answer: 451.2 particles]
+
+A report shows 380 total particles per mm² and 19 non-nodular particles per mm². Calculate Nodularity (% by count).
+[Step 1: Calculate nodular particles: 380 - 19 = 361]
+[Step 2: Calculate nodularity percentage: (361 / 380) * 100 = 95]
+[Answer: 95%]
+
+Given a Graphite Fraction of 10% and a Ferrite/Pearlite ratio of 90%/10% in the matrix, calculate the actual Pearlite percentage in the entire microstructure.
+[Step 1: Calculate matrix percentage: 100 - 10 = 90%]
+[Step 2: Calculate Pearlite percentage: 90 * 0.10 = 9%]
+[Answer: 9%]
+
+What percentage of the microstructure is non-nodular if VI = 60%, V = 38%, IV = 1%, III = 1%?
+[Step 1: Add non-nodular forms (IV + III): 1 + 1 = 2]
+[Answer: 2%]
+
+Calculate the total non-nodular particles if total particles = 520 and nodularity = 96%.
+[Step 1: Calculate nodular particles: 520 * 0.96 = 499.2]
+[Step 2: Calculate non-nodular particles: 520 - 499.2 = 20.8]
+[Answer: 20.8 particles]
+
+Given an actual Pearlite percentage of 40% and a Graphite Fraction of 10%, calculate the Ferrite percentage.
+[Step 1: 100 - 40 = 60]
+[Step 2: 60 - 10 = 50]
+[Answer: 50%]
+
+If Graphite Form distribution is VI 50%, V 45%, IV 3%, III 2%, calculate the percentage of non-nodular graphite.
+[Step 1: Add non-nodular forms (IV + III): 3 + 2 = 5]
+[Answer: 5%]
